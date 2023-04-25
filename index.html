@@ -23,20 +23,23 @@
 </head>
 <body>
 
-  <div id="root">
-    <div class="container my-5">
-      <h1 class="mb-3">Numero di e-mail da generare</h1>
-      <div class="d-flex align-items-center justify-content-center">
-          <input type="number" class="fs-5" v-model.number="numb">
-          <button class="btn btn-dark  mx-3" @click="generateMails()">Generate</button>
-          <button class="btn btn-dark" @click="addMail()">Add Mail</button>
-  </div>
-  <div class="box-list">
-    <ul class="p-0" v-if="mails.length >= numb">
-      <li v-for="mail in mails" class="p-2" ref="adress">{{mail}}</li>
-  </ul>
-  </div>
-  </div>
+  <div id="app">
+    <div class="container">
+
+        <h1 class="mb-3">E-MAILs GENERATOR</h1>
+
+        <div class="d-flex align-items-center justify-content-center">
+            <input type="number" class="fs-5" v-model.number="numb">
+            <button class="btn btn-dark  mx-3" @click="generateMails()">Generate</button>
+            <button class="btn btn-dark" @click="addMail()">Add Mail</button>
+        </div>
+        <div class="box-list">
+            <ul class="p-0" v-if="mails.length >= numb">
+                <li v-for="mail in mails" class="p-2" ref="adress">{{mail}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 
