@@ -3,4 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ul{
+  list-style: none;
+}
+.container{
+  background-color: rgba(40, 62, 186, 0.499);
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+}
+.box-list{
+  margin: 1rem auto 0 auto;
+  min-height: 20%;
+  width: 60%;
+  background-color: white;
+  max-height: 70%;
+  overflow: auto;
+}
