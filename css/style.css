@@ -6,6 +6,7 @@
 ul{
   list-style: none;
 }
+
 .container{
   background-color: rgba(40, 62, 186, 0.499);
   width: 60%;
@@ -14,6 +15,7 @@ ul{
   text-align: center;
   padding-top: 50px;
 }
+
 .box-list{
   margin: 1rem auto 0 auto;
   min-height: 20%;
