@@ -34,6 +34,7 @@ const app = createApp({
         },
         addMail(){
             this.numb++;
+            // usiamo la Api di Boolean 
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((element)=>{
                 this.mails.push(element.data.response)
                 console.log(this.mails.length);
